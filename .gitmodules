@@ -1,0 +1,7 @@
+[submodule "guiltysnakeblog/themes/mana"]
+	path = guiltysnakeblog/themes/mana
+	url = https://github.com/Livour/hugo-mana-theme.git
+[submodule "guiltysnakeblog/public"]
+	path = guiltysnakeblog/public
+	url = https://github.com/Guilty-Snake/guiltysnake.github.io.git
+	branch = main
