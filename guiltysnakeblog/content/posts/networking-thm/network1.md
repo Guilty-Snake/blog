@@ -56,3 +56,44 @@ The application layer is the top layer, and you might have encountered many of i
 | Layer 3 | Network layer | Logical addressing and routing between networks | IP, ICMP, IPSec |
 | Layer 2 | Data link layer | Reliable data transfer between adjacent nodes | Ethernet (802.3), WiFi (802.11) |
 | Layer 1 | Physical layer | Physical data transmission media | Electrical, optical, and wireless signals |
+
+## TCP/IP model
+TCP/IP (Transmission Control Protocol/Internet Protocola) model was created by the US Department of defense as this model allows a network to continue its operations even after parts of it are broken.
+Layer Number	ISO OSI Model	TCP/IP Model (RFC 1122)	Protocols
+| Layer Number | ISO OSI Model | TCP/IP Model (RFC 1122) | Protocols |
+| --- | --- | --- | --- |
+| 7 | Application Layer | Application Layer | HTTP, HTTPS, FTP, POP3, SMTP, IMAP, Telnet, SSH |
+| 6 | Presentation Layer | - | - |
+| 5 | Session Layer | - | - |
+| 4 | Transport Layer | Transport Layer | TCP, UDP |
+| 3 | Network Layer | Internet Layer | IP, ICMP, IPSec |
+| 2 | Data Link Layer | Link Layer | Ethernet 802.3, WiFi 802.11 |
+| 1 | Physical Layer | - | - |
+
+## IP addresses and subnets
+IP addresses are unquie identifiers for hosts on a network to recognize and communicate with one another. There are currently two versions of IP adderesses, IPV4 and IPV6. An ipaddress contains 4 octects, each representing decimal numbers from 0-255 an example of which is given below.
+
+<img src="../octets.png" alt="octets" width="420">
+
+0 and 255 are reserverd for network and broadcast addresses respectively, Sending to the broadcast address targets all the hosts on the network. IPv6 was created because IPv4 could not have more than 4 billion unique addresses.
+
+### Private IP addresses
+1. Public IP addresses,
+2. Private IP addresses,
+are the two types of IP addresses.
+RFC(Request For Comments) 1918 defines the following three ranges of private IP addresses:
+* 10.0.0.0 - 10.255.255.255 (10/8)
+* 172.16.0.0 - 172.31.255.255 (172.16/12)
+* 192.168.0.0 - 192.168.255.255 (192.168/16)
+
+In basic terms, Private IP address is a address of a device within a network such as a home, school or hospital network where devices within the network can communicate with each other and for it to access the internet a router capable of Network Address Translation (NAT) with a public ip address is needed.
+
+### Routing
+A router forwards data packets to the proper network. Usually, a data packet passes through multiple routers before it reaches its final destination. The router functions at layer 3, inspecting the IP address and forwarding the packet to the best network (router) so the packet gets closer to its destination.
+
+## UDP and TCP
+IP protocols allows us to reach a destination host on a network identified by its ip address. Proper protocols are needed for applications and processes on differnet devices to communicate with one other. UDP(User Datagram Protocol) and TCP(Transmission Control Protocol) are such protocols.
+### UDP
+
+### TCP
+<img src="../tcp.svg" alt="tcp" width="420">
