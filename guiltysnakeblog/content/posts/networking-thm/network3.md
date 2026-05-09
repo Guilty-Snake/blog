@@ -2,7 +2,7 @@
 title: "Networking Core Protocols"
 date: 2026-04-23
 tags: ['THM', 'Cybersecurity101', 'Networking']
-image: "images/Network_protocols.png"
+image: "images/network-protocols.webp"
 ---
 ## Learning Objectives
 * WHOIS
@@ -76,3 +76,5 @@ Some IMAP commands:
 * **COPY <sequence_set> <data_item_name>** copies the specified messages to another mailbox
 * **LOGOUT** logs out
 >The IMAP server listens on TCP port 143 by default.
+
+
